@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- 2021010108 Larissa Kelly da Silva Lopes -->
+<!-- A margin é o espaço externo,distância entre um elemento e os outros elementos ao redor dele.-->
+<!--O padding é o espaço interno  entre o conteúdo (texto, imagem, etc.) e a borda do próprio elemento.-->
+
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Página de uso</title>
+
+    <style>
+
+        body{
+            background: linear-gradient(135deg, #5cda90, #2f855a);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2{
+            text-align: center;
+            color: #013b1e;
+            margin-bottom: 30px;
+        }
+
+        p{
+            line-height: 1.6;
+            color: #013b1e;
+        }
+
+        /* IMAGENS */
+
+        .imagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 40px 0;
+    }
+
+    /* Primeira imagem maior */
+    .img-principal{
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Logo menor */
+    .logo{
+        width: 150px;
+        height: auto;
+    }   
+
+        /* RESPONSIVO */
+        @media (max-width: 768px){
+
+            .imagens{
+                flex-direction: column;
+            }
+
+            .imagens img{
+                width: 150px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+   <div class="card">
+
+    <div class="imagens">
+        <img src="s.jpeg" alt="Imagem principal" class="img-principal">
+        <img src="https://sisar.org.br/wp-content/uploads/2019/01/marca-sisar.png" 
+             alt="Logo Sisar" class="logo">
+    </div>
+
+    <h2>Quer conhecer um pouco do SISAR BBA?</h2>
+
+    <p class="destaque2"> O Sisar BBA (Sistema Integrado de Saneamento Rural da Bacia Hidrográfica do Banabuiú) é uma organização não governamental, sem fins lucrativos, sediada em Quixadá-CE, que atua na gestão, manutenção e operação de sistemas de abastecimento de água e esgoto em comunidades rurais. Ele faz parte da rede Sisar Ceará, promovendo saneamento com gestão compartilhada com associações comunitárias. </p> <p id="destaque"> Foco na Bacia do Banabuiú: Atua especificamente na região da bacia hidrográfica do Banabuiú, no estado do Ceará, com forte presença em Quixadá e região. </p> <p class="destaque2"> Ações e Projetos: Realiza treinamentos para operadores, melhorias em comunidades, e projetos sociais como o "Sisar em Ação", que leva serviços de cidadania às comunidades. </p> <p class="destaque2"> O Sisar é uma federação de associações que, através de contribuição mensal, financia uma estrutura responsável pela manutenção de seus sistemas, fornecimento de insumos (material para manutenção e tratamento) e capacitação social. A gestão do sistema é compartilhada entre Associação e Sisar. O Sisar supre as carências técnicas, administrativas e sociais da comunidade. </p>   
+</body>
+</html>
