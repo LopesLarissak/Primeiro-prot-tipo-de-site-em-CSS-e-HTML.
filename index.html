@@ -14,83 +14,37 @@
 
 body{
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background: linear-gradient(135deg, #5cda90, #2f855a);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Card central */
 .card{
-    max-width: 900px;
-    margin: auto;
+    width: 100%;
+    min-height: 100vh;
     background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Título */
-h2{
-    text-align: center;
-    color: #013b1e;
-    margin-bottom: 30px;
-}
-
-/* Texto */
-p{
-    line-height: 1.7;
-    color: #013b1e;
-    text-align: justify;
-}
-
-/* Container das imagens */
 .imagens{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
-    margin: 40px 0;
-    flex-wrap: wrap; /* importante */
+    gap: 20px;
 }
 
-/* Imagem principal */
 .img-principal{
-    width: 350px;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
-/* Logo */
 .logo{
-    width: 150px;
-    max-width: 100%;
-    height: auto;
+    width: 120px;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 768px){
-
-    .card{
-        padding: 20px;
-    }
-
-    .imagens{
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .img-principal{
-        width: 100%;
-    }
-
-    .logo{
-        width: 120px;
-    }
-
-    p{
-        font-size: 15px;
-    }
+p{
+    text-align: justify;
 }
 
 </style>
