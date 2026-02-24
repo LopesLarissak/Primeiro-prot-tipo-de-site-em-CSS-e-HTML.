@@ -12,59 +12,88 @@
 
     <style>
 
-        body{
-            background: linear-gradient(135deg, #5cda90, #2f855a);
-            font-family: Arial, Helvetica, sans-serif;
-        }
+body{
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #5cda90, #2f855a);
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        h2{
-            text-align: center;
-            color: #013b1e;
-            margin-bottom: 30px;
-        }
+/* Card central */
+.card{
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
 
-        p{
-            line-height: 1.6;
-            color: #013b1e;
-        }
+/* Título */
+h2{
+    text-align: center;
+    color: #013b1e;
+    margin-bottom: 30px;
+}
 
-        /* IMAGENS */
+/* Texto */
+p{
+    line-height: 1.7;
+    color: #013b1e;
+    text-align: justify;
+}
 
-        .imagens{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        margin: 40px 0;
+/* Container das imagens */
+.imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap; /* importante */
+}
+
+/* Imagem principal */
+.img-principal{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Logo */
+.logo{
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px){
+
+    .card{
+        padding: 20px;
     }
 
-    /* Primeira imagem maior */
+    .imagens{
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .img-principal{
-        width: 350px;
-        height: auto;
-        border-radius: 10px;
+        width: 100%;
     }
 
-    /* Logo menor */
     .logo{
-        width: 150px;
-        height: auto;
-    }   
+        width: 120px;
+    }
 
-        /* RESPONSIVO */
-        @media (max-width: 768px){
+    p{
+        font-size: 15px;
+    }
+}
 
-            .imagens{
-                flex-direction: column;
-            }
-
-            .imagens img{
-                width: 150px;
-            }
-
-        }
-
-    </style>
+</style>
 </head>
 
 <body>
